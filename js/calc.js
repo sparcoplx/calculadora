@@ -12,6 +12,7 @@ var sum = document.getElementById('b+');
 var rest = document.getElementById('b-');
 var mult = document.getElementById('bx');
 var div = document.getElementById('bd');
+var igual = document.getElementById('bigual');
 var resultado = document.getElementById('resultado');
 
 boton0.onclick = function(e){
@@ -112,7 +113,6 @@ div.onclick = function(e){
         resultado.value +=  this.value;
     }
 }
-resultado.onclick= function (e){
-    resultado.value = eval(resultado.value)
-    console.log(resultado.value)
+igual.onclick= function (e){
+    resultado.value = eval(resultado.value);
 }

@@ -116,3 +116,8 @@ borrar.onclick = function (e){
 reset.onclick = function (e){
     resultado.value = "";
 }
+resultado.addEventListener('keypress', e => {
+    if(e.keyCode == 13){
+        resultado.value = eval(resultado.value);
+    }
+});
